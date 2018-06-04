@@ -8,8 +8,26 @@
 //find sound bites for guesses and wins & loses
 
 
-var letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-for ( var i = 0; i < letters.length; i++ ){
-    console.log(letters[i]);
+// array containing all of the letters of the alphabed
+var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+
+// a for loop to cycle through the alphabet array
+for ( var i = 0; i < alphabet.length; i++ ){
+    console.log(alphabet[i]);
 }
+
+
+// function to convert the users letter to uppercase
+// and an if else to check to see if the answer is true or false
+function guess(x){
+    var x = x.toUpperCase();
+    if (x == true){
+        console.log("works");
+    }else{
+        console.log("doesn't work");
+    }
+}
+
+guess("M");
